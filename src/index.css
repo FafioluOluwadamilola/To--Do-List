@@ -5,10 +5,13 @@
     @apply bg-[#0D1423];
     @apply flex justify-center items-center min-h-screen;
   }
-  input{
-    @apply border-2 border-amber-600 bg-white/80 mb-3 rounded-lg;
+  input[type="text"]{
+    @apply border-2 border-amber-600 bg-[#ECECF0] mb-3 rounded-lg;
     @apply p-2;
     @apply w-full;
+  }
+  input[type="checkbox"]{
+    @apply w-4 h-4 accent-black;
   }
   h1{
     @apply text-3xl flex font-bold text-black;
@@ -18,6 +21,9 @@
   }
   button{
     @apply cursor-pointer;
+  }
+  label{
+    @apply text-black font-semibold;
   }
 }
 
@@ -45,15 +51,15 @@
     @apply flex justify-between mb-4;
   }
   .btns-3{
-    @apply  bg-[#ECECF0] rounded-4xl  flex justify-evenly;
+    @apply  bg-[#ECECF0] rounded-4xl mb-4 flex justify-evenly;
   }
   .btn{
     @apply  w-full text-black font-bold p-2 rounded-4xl ;
   }
   .task-bar{
-    @apply  flex justify-start items-center p-4;
+    @apply border border-amber-600 outline-0 p-4 flex gap-4 items-center;
   }
   .task{
-    @apply  w-full bg-yellow-700 border-blue-800 rounded-lg;
+    @apply h-auto w-full border border-amber-600 rounded;
   }
 } 

@@ -11,7 +11,7 @@ function App() {
         </div>
 
         <div className='form'>
-          <input type="text" placeholder='Add a new task' />
+          <input type="text" placeholder='Add a new task.....' />
           <button><img src="/public/icons8-plus-36.png" alt="Add Task" /></button>
         </div>
 
@@ -21,23 +21,23 @@ function App() {
         </div>
 
         <div className='btns-3'>
-          <button className='btn'>Button 1</button>
-          <button className='btn'>Button 2</button>
-          <button className='btn'>Button 3</button>
+          <button className='btn'>All (x)</button>
+          <button className='btn'>Active (x)</button>
+          <button className='btn'>Completed (x)</button>
         </div>
 
         <div className='task'>
           <div className='task-bar'>
             <input type="checkbox" id="task1" name="task1" value="Task 1"/>
-            <label for="task1"> Task 1</label><br/>
+            <label for="task1"> Wake Up to Eat</label>
           </div>
           <div className='task-bar'>
             <input type="checkbox" id="task2" name="task2" value="Task 2"/>
-            <label for="task2"> Task 2</label><br/>
+            <label for="task2"> Go to the Gymnasium</label>
           </div>
           <div className='task-bar'>
             <input type="checkbox" id="task3" name="task3" value="Task 3"/>
-            <label for="task3"> Task 3</label><br/>
+            <label for="task3"> Get Ready for Work</label>
           </div>
         </div>
 
