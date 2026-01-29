@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-[#0D1423];
+    @apply flex justify-center items-center min-h-screen;
+  }
+  input{
+    @apply border-2 border-amber-600 bg-white/80 mb-3 rounded-lg;
+    @apply p-2;
+    @apply w-full;
+  }
+  h1{
+    @apply text-3xl flex font-bold text-black;
+  }
+  p{
+    @apply text-lg text-black text-left;
+  }
+  button{
+    @apply cursor-pointer;
+  }
+}
+
+@layer utilities{
+  .bg-primary {
+    @apply bg-white;
+  }
+  .text-primary {
+    @apply text-black;
+  }
+  .size{
+    @apply w-180 h-auto;
+    @apply border-2 border-amber-600 rounded-lg;
+  }
+  .content{
+    @apply  p-10;  
+  }
+  .header{
+    @apply flex justify-start flex-col mb-6;
+  }
+  .form{
+    @apply w-full flex gap-4;
+  }
+  .mid-break{
+    @apply flex justify-between mb-4;
+  }
+  .btns-3{
+    @apply  bg-[#ECECF0] rounded-4xl  flex justify-evenly;
+  }
+  .btn{
+    @apply  w-full text-black font-bold p-2 rounded-4xl ;
+  }
+  .task-bar{
+    @apply  flex justify-start items-center p-4;
+  }
+  .task{
+    @apply  w-full bg-yellow-700 border-blue-800 rounded-lg;
+  }
+} 
