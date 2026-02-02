@@ -2,64 +2,73 @@
 
 @layer base {
   body {
-    @apply bg-[#0D1423];
     @apply flex justify-center items-center min-h-screen;
+    background: linear-gradient(135deg, #1a2338 0%, #0b1020 70%);
   }
-  input[type="text"]{
-    @apply border-2 border-amber-600 bg-[#ECECF0] mb-3 rounded-lg;
-    @apply p-2;
-    @apply w-full;
+  input[type="text"] {
+    @apply bg-[#ECECF0] rounded-lg p-1 outline-none w-full
+     transition-all duration-300 ease-out
+         focus:shadow-lg focus:shadow-black/30
+         focus:ring-2 focus:ring-amber-500/50
+         focus:-translate-y-0.5;
   }
-  input[type="checkbox"]{
+  input[type="checkbox"] {
     @apply w-4 h-4 accent-black;
   }
-  h1{
+  h1 {
     @apply text-3xl flex font-bold text-black;
   }
-  p{
+  p {
     @apply text-lg text-black text-left;
   }
-  button{
+  button {
     @apply cursor-pointer;
+    img {
+      @apply pr-2;
+    }
   }
-  label{
+  label {
     @apply text-black font-semibold;
   }
 }
 
-@layer utilities{
+@layer utilities {
   .bg-primary {
     @apply bg-white;
   }
   .text-primary {
     @apply text-black;
   }
-  .size{
+  .size {
     @apply w-180 h-auto;
     @apply border-2 border-amber-600 rounded-lg;
   }
-  .content{
-    @apply  p-10;  
+  .content {
+    @apply p-10;
   }
-  .header{
+  .header {
     @apply flex justify-start flex-col mb-6;
   }
-  .form{
-    @apply w-full flex gap-4;
+  .form {
+    @apply w-full flex justify-center;
   }
-  .mid-break{
-    @apply flex justify-between mb-4;
+  .mid-break {
+    @apply mt-4 flex justify-between mb-4;
   }
-  .btns-3{
-    @apply  bg-[#ECECF0] rounded-4xl mb-4 flex justify-evenly;
+  .btns-3 {
+    @apply bg-[#ECECF0] rounded-4xl mb-4 flex justify-evenly;
   }
-  .btn{
-    @apply  w-full text-black font-bold p-2 rounded-4xl ;
+  .btn {
+    @apply flex justify-center w-full text-black font-bold p-2 rounded-4xl m-1 hover:bg-white/90 transition-colors;
   }
-  .task-bar{
-    @apply border border-amber-600 outline-0 p-4 flex gap-4 items-center;
+  .task-bar {
+    @apply border-b border-amber-500 outline-none p-4 flex gap-4 items-center;
   }
-  .task{
-    @apply h-auto w-full border border-amber-600 rounded;
+  .task-bar:last-child {
+    @apply border-b-0;
   }
-} 
+
+  .task {
+    @apply border border-amber-500 rounded-2xl h-auto w-full cursor-pointer;
+  }
+}
