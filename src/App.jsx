@@ -60,7 +60,7 @@ function App() {
     <>
       <main className='size bg-primary border-primary text-primary content'>
         <div className='header'>
-          <h1><img className='mr-2' src="/public/icons8-to-do-list-38.png" />To-Do List</h1>
+          <h1><img className='mr-2' src="/icons8-to-do-list-38.png" />To-Do List</h1>
           <p>Manage your tasks with state and event handling</p>
         </div>
 
@@ -73,7 +73,7 @@ function App() {
                 addTask();
               }
             }} />
-          <button onClick={addTask}><img src="/public/icons8-add-36.png" alt="Add Task" /></button>
+          <button onClick={addTask}><img src="/icons8-add-36.png" alt="Add Task" /></button>
         </div>
 
         <div className='mid-break'>
@@ -82,9 +82,9 @@ function App() {
         </div>
 
         <div className='btns-3'>
-          <button className={'btn' + (filter === 'all' ? ' bg-white/90' : '')} onClick={() => setFilter('all')}><img src='/public/icons8-to-do-list-24.png' /> All ({tasks.length})</button>
-          <button className={'btn' + (filter === 'active' ? ' bg-white/90' : '')} onClick={() => setFilter('active')}><img src='/public/icons8-active-24.png' /> Active ({tasks.filter(task => !task.completed).length})</button>
-          <button className={'btn' + (filter === 'completed' ? ' bg-white/90' : '')} onClick={() => setFilter('completed')}><img src='/public/icons8-done-24.png' /> Completed ({tasks.filter(task => task.completed).length})</button>
+          <button className={'btn' + (filter === 'all' ? ' bg-white/90' : '')} onClick={() => setFilter('all')}><img src='/icons8-to-do-list-24.png' /> All ({tasks.length})</button>
+          <button className={'btn' + (filter === 'active' ? ' bg-white/90' : '')} onClick={() => setFilter('active')}><img src='/icons8-active-24.png' /> Active ({tasks.filter(task => !task.completed).length})</button>
+          <button className={'btn' + (filter === 'completed' ? ' bg-white/90' : '')} onClick={() => setFilter('completed')}><img src='/icons8-done-24.png' /> Completed ({tasks.filter(task => task.completed).length})</button>
         </div>
 
         <div className='task'>
@@ -107,9 +107,9 @@ function App() {
                       }}
                     />
                     <div className='ml-auto flex flex-row items-center gap-2'>
-                      <img src='/public/icons8-enter-48.png' alt="Save Edit" onClick={saveEdit} />
+                      <img src='/icons8-enter-48.png' alt="Save Edit" onClick={saveEdit} />
                       <p>
-                        <img src='/public/icons8-cancel-48.png' alt="Cancel Edit" onClick={cancelEdit} />
+                        <img src='/icons8-cancel-48.png' alt="Cancel Edit" onClick={cancelEdit} />
                       </p>
                     </div>
                   </>
@@ -119,9 +119,9 @@ function App() {
              <>
                <label className={task.completed ? 'line-through text-gray-500' : ''}>{task.text}</label>
                <div className='ml-auto flex gap-2'>
-                 <img src='/public/icons8-edit-16.png' alt="Edit Task"  onClick={() => startEdit(task)}/>
+                 <img src='/icons8-edit-16.png' alt="Edit Task"  onClick={() => startEdit(task)}/>
                  <img
-                   src='/public/icons8-trash-16 (1).png' alt="Delete Task"
+                   src='/icons8-trash-16 (1).png' alt="Delete Task"
                    onClick={() => {
                      const confirmDelete = window.confirm("Are you sure you want to delete this task?");
                      if (confirmDelete) {
