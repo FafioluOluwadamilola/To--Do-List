@@ -61,7 +61,7 @@ function App() {
       <main className='size bg-primary border-primary text-primary content'>
         <div className='header'>
           <h1><img className='mr-2' src="/icons8-to-do-list-38.png" />To-Do List</h1>
-          <p>Manage your tasks with state and event handling</p>
+          <p>Managing your tasks with state & CRUD operations</p>
         </div>
 
         <div className='form'>
