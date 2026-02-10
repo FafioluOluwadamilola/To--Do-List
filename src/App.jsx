@@ -106,11 +106,9 @@ function App() {
                         if (e.key === "Escape") cancelEdit();
                       }}
                     />
-                    <div className='ml-auto flex flex-row items-center gap-2'>
+                    <div className='edit-btn'>
                       <img src='/icons8-enter-48.png' alt="Save Edit" onClick={saveEdit} />
-                      <p>
                         <img src='/icons8-cancel-48.png' alt="Cancel Edit" onClick={cancelEdit} />
-                      </p>
                     </div>
                   </>
 

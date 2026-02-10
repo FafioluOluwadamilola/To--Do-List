@@ -42,22 +42,37 @@
 }
 
 @media (max-width: 640px) {
+  .header h1{
+    display: flex;
+    align-items: center;
+  }
+  .header img {
+    height: 24px;
+    width: 24px;
+  }
   .content {
     width: 100%;
     padding: 20px;
   }
-   .header h1 {
+  .header h1 {
     font-size: 1.5rem;
   }
-  .form{
+  .form {
     gap: 10px;
     margin: 20px 0;
+  }
+  .btn{
+    display: flex;
+    align-items: center;
   }
   .btns-3 {
     flex-direction: column;
     gap: 8px;
   }
-  .task-bar{
+  .btns-3 img{
+    height: 16px;
+  }
+  .task-bar {
     gap: 10px;
   }
 }
